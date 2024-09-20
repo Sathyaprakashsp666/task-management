@@ -1,0 +1,107 @@
+.taskListContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Filter Buttons */
+.filterButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.filterBtn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #998e8e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.activeFilter {
+  background-color: #007bff;
+  color: white;
+}
+
+.filterBtn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.completedTask {
+  text-decoration: line-through;
+  background-color: #e0e0e0;
+}
+
+.taskCheckbox {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.taskDetails {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskTitle {
+  font-size: 1.1rem;
+}
+
+.taskActions button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.editTaskContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.editTaskInput {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.saveBtn,
+.cancelBtn,
+.editBtn,
+.deleteBtn {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.saveBtn:hover,
+.cancelBtn:hover,
+.editBtn:hover,
+.deleteBtn:hover {
+  background-color: #0056b3;
+}
+
+.noTasksText {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #666;
+}
