@@ -33,7 +33,13 @@ const App = () => {
             path="/"
             element={
               user ? (
-                <TaskList setEditingTask={setEditingTask} />
+                <>
+                  <AddTask
+                    editingTask={editingTask}
+                    setEditingTask={setEditingTask}
+                  />
+                  <TaskList setEditingTask={setEditingTask} />
+                </>
               ) : (
                 <Navigate to="/login" />
               )
